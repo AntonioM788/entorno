@@ -1,0 +1,38 @@
+/*5. Categorización de Edades: Escribe un programa que solicite la edad 
+ * del usuario. Si es menor de 12 años, muestra "Infante". 
+ * Si tiene entre 12 y 17 años, muestra "Adolescente". 
+ * Si está entre 18 y 60 años, muestra "Adulto". 
+ * Si es mayor de 60, muestra "Anciano".
+ */
+import java.util.Scanner;
+
+public class actividad_edades {
+
+	public static void main(String[] args) {
+
+			int edad=0;
+			Scanner teclado = new Scanner(System.in);
+			
+			System.out.println("Intrduzca usted su edad: ");
+			edad=teclado.nextInt();
+			
+			if (edad <12 ) {
+				System.out.println("Infante");
+			}
+			
+			else if (edad >12 && edad<17) {
+				System.out.println("Adolescente");
+				
+			}
+			else if  (edad >17 && edad<60) {
+				System.out.println("Adulto");
+				
+			}
+			else if  (edad >60) {
+				System.out.println("Anciano");
+				
+			}
+		
+	}
+
+}
